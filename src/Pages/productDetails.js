@@ -54,7 +54,7 @@ class ProductDetails extends Component{
             if(item.id === this.state.productDetails.id ){
                 return(
                     <div key={index}>
-                       <img src="/img/c1.png" alt="..."/>
+                       <img src={process.env.PUBLIC_URL +"/img/c1.png"}  alt="..."/>
                         <h4>{item.name}</h4>
                         <span>{item.email}</span>
                         <p>{item.comment}</p>
